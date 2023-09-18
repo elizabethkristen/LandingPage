@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Josefin+Sans:wght@700&family=Lato:wght@400;700&family=Manrope:wght@700&family=Nunito+Sans:opsz,wght@6..12,400;6..12,700&family=Roboto:wght@300;400;500&family=Rowdies&family=Secular+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/* Estilos para dispositivos maiores (por exemplo, desktops) */
+
+body {
+    font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
+    background-color: #121835;
+    color: white;
+}
+
+header {
+    position: sticky;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header a {
+    padding: 5px;
+    color: white;
+    margin-left: 50px;
+}
+
+.info {
+    padding: 50px;
+    width: 500px;
+    height: 500px;
+    margin-top: 100px;
+}
+
+p {
+    margin-top: 12px;
+    margin-bottom: 25px;
+}
+
+h1 {
+    color: gold;
+    font-size: 32pt;
+    font-family: 'Josefin Sans';
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    padding: 8px;
+    margin-top: 20px;
+    width: 300px;
+    display: block;
+    border: none;
+    border-radius: 20px;
+    font-family: 'Nunito Sans';
+}
+
+.bnt {
+    padding: 12px;
+    margin-top: 22px;
+    border: none;
+    border-radius: 20px;
+    width: 80px;
+    background-color: gold;
+}
+
+.img-container {
+    order: 2; 
+    margin-top: 20px;
+}
+
+.bnt:hover {
+    background-color: yellow;
+}
+
+img {
+    width: 475px;
+    margin-top: 50px;
+    margin-right: 20px;
+}
+
+a:hover {
+    color: gold;
+}
+
+#logo {
+    font-size: 15pt;
+}
+
+#logo span {
+    margin-right: 5px;
+}
+
+/* Estilos para dispositivos menores (por exemplo, smartphones) */
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    header a {
+        margin: 10px 0;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-container {
+        order: 0; 
+        margin-top: 20px;
+    }
+
+    .info {
+        width: 90%;
+        padding: 20px;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    img {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    input {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
